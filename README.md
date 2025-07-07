@@ -99,12 +99,26 @@ medical-center-app/
 ## 🚀 Guida all'Installazione
 
 ### Prerequisiti
-- <img src="https://img.shields.io/badge/Node.js-v18%2B-339933?logo=nodedotjs" alt="Node.js"> [Node.js](https://nodejs.org/) v18+
-- <img src="https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql" alt="MySQL"> [MySQL](https://www.mysql.com/) 8.0+
-- <img src="https://img.shields.io/badge/Git-Required-F05032?logo=git" alt="Git"> [Git](https://git-scm.com/)
-- Client database:
-  - <img src="https://img.shields.io/badge/-phpMyAdmin-6C78AF?logo=phpmyadmin" alt="phpMyAdmin"> [phpMyAdmin](https://www.phpmyadmin.net/)
-  - <img src="https://img.shields.io/badge/-MySQL_Workbench-4479A1?logo=mysql" alt="MySQL Workbench"> [MySQL Workbench](https://www.mysql.com/products/workbench/)
+<a href="https://nodejs.org/" target="_blank">
+  <img src="https://img.shields.io/badge/Node.js-v18+-339933?logo=nodedotjs&logoColor=white" alt="Node.js v18+">
+</a>
+
+<a href="https://www.mysql.com/" target="_blank">
+  <img src="https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white" alt="MySQL 8.0+">
+</a>
+
+<a href="https://git-scm.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Git-Required-F05032?logo=git&logoColor=white" alt="Git">
+</a>
+
+**Client database:**  
+<a href="https://www.phpmyadmin.net/" target="_blank">
+  <img src="https://img.shields.io/badge/phpMyAdmin-Recommended-6C78AF?logo=phpmyadmin&logoColor=white" alt="phpMyAdmin">
+</a>
+
+<a href="https://www.mysql.com/products/workbench/" target="_blank">
+  <img src="https://img.shields.io/badge/MySQL_Workbench-Alternative-4479A1?logo=mysql&logoColor=white" alt="MySQL Workbench">
+</a>
 
 ### 1. Clonazione del Repository
 ```bash
