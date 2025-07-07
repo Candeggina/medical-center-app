@@ -95,7 +95,7 @@ medical-center-app/
 └── README.md                    # Documentazione
 ```
 
-```markdown
+
 ## 🚀 Guida all'Installazione
 
 ### Prerequisiti
