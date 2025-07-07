@@ -1,7 +1,7 @@
 # 🏥 Medical Center - Gestione Appuntamenti Medici  
 *Progetto scolastico full-stack con Node.js, Express e MySQL*  
 
-![Anteprima Dashboard](https://via.placeholder.com/800x400?text=Schermata+Login+%2B+Dashboard)  
+![Anteprima Dashboard](https://imgur.com/a/OHctasZ)  
 
 ## 📌 Stato del Progetto  
 **Backend completo (~60%)** | **Frontend parziale (~40%)**  
