@@ -28,6 +28,7 @@
 ```  
 
 ## 🗄 Struttura Backend/Frontend
+```plaintext
 medical-center-app/
 ├── backend/
 │   ├── src/
@@ -100,8 +101,8 @@ medical-center-app/
 
 3. **Installa e avvia**  
    ```bash
-   npm install
-   npm start
+   cd backend
+   node app.js
    ```
 
 4. **Accedi al frontend**  
