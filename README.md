@@ -95,21 +95,16 @@ medical-center-app/
 └── README.md                    # Documentazione
 ```
 
-
-Ecco la versione perfettamente formattata per GitHub, mantenendo intatto il tuo contenuto originale ma ottimizzata per la visualizzazione:
-
 ```markdown
 ## 🚀 Guida all'Installazione
 
 ### Prerequisiti
-- [![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?logo=nodedotjs)](https://nodejs.org/)  
-- [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql)](https://www.mysql.com/)  
-- [![Git](https://img.shields.io/badge/Git-Required-F05032?logo=git)](https://git-scm.com/)  
-- Client database:  
-  [![phpMyAdmin](https://img.shields.io/badge/-phpMyAdmin-6C78AF?logo=phpmyadmin)](https://www.phpmyadmin.net/)  
-  [![MySQL Workbench](https://img.shields.io/badge/-MySQL_Workbench-4479A1?logo=mysql)](https://www.mysql.com/products/workbench/)
-
----
+- <img src="https://img.shields.io/badge/Node.js-v18%2B-339933?logo=nodedotjs" alt="Node.js"> [Node.js](https://nodejs.org/) v18+
+- <img src="https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql" alt="MySQL"> [MySQL](https://www.mysql.com/) 8.0+
+- <img src="https://img.shields.io/badge/Git-Required-F05032?logo=git" alt="Git"> [Git](https://git-scm.com/)
+- Client database:
+  - <img src="https://img.shields.io/badge/-phpMyAdmin-6C78AF?logo=phpmyadmin" alt="phpMyAdmin"> [phpMyAdmin](https://www.phpmyadmin.net/)
+  - <img src="https://img.shields.io/badge/-MySQL_Workbench-4479A1?logo=mysql" alt="MySQL Workbench"> [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 ### 1. Clonazione del Repository
 ```bash
@@ -132,8 +127,9 @@ cd medical-center-app/backend
 ```bash
 node app.js
 ```
+
 > Server disponibile all'indirizzo: `http://localhost:3000`
-```
+
 
 ## 📚 Documentazione API  
 | Endpoint           | Metodo | Descrizione                     |
