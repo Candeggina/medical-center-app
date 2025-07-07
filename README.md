@@ -19,13 +19,16 @@
 ◻ Gestione notifiche email  
 ◻ Ottimizzazione mobile  
 
-## 🛠 Stack Tecnologico  
-```  
-![Node.js](https://img.shields.io/badge/Node.js-18.x-green)  
-![Express](https://img.shields.io/badge/Express-4.x-lightgrey)  
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)  
-![JWT](https://img.shields.io/badge/JWT-Auth-orange)  
-```  
+## 🛠 Stack Tecnologico
+
+<div align="center">
+
+  ![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?logo=nodedotjs&logoColor=white)
+  ![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white)
+  ![JWT](https://img.shields.io/badge/JWT-Auth-000000?logo=jsonwebtokens&logoColor=white)
+  
+</div>   
 
 ## 🗄 Struttura Backend/Frontend
 ```plaintext
