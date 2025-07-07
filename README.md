@@ -21,21 +21,21 @@
 
 ## 🛠 Stack Tecnologico
 
-<div align="center" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 20px 0;">
+<div align="center" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 2rem 0;">
 
-<a href="https://nodejs.org/" target="_blank">
+<a href="https://nodejs.org/" target="_blank" style="margin: 0 7px;">
   <img src="https://img.shields.io/badge/Node.js-18.x-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
 </a>
 
-<a href="https://expressjs.com/" target="_blank">
+<a href="https://expressjs.com/" target="_blank" style="margin: 0 7px;">
   <img src="https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
 </a>
 
-<a href="https://www.mysql.com/" target="_blank">
+<a href="https://www.mysql.com/" target="_blank" style="margin: 0 7px;">
   <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
 </a>
 
-<a href="https://jwt.io/" target="_blank">
+<a href="https://jwt.io/" target="_blank" style="margin: 0 7px;">
   <img src="https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT">
 </a>
 
