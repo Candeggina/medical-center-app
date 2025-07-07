@@ -27,59 +27,57 @@
 ![JWT](https://img.shields.io/badge/JWT-Auth-orange)  
 ```  
 
-## 🗄 Struttura Backend  
-backend/
-├── middleware/
-│   └── auth.js          # Middleware autenticazione JWT
-├── node_modules/        # Dipendenze (escluso da Git)
-├── public/              # File statici (se presenti)
-├── routes/
-│   ├── appointments.js  # Route appuntamenti
-│   ├── auth.js          # Route autenticazione
-│   ├── contacts.js      # Route contatti
-│   ├── doctors.js       # Route medici
-│   ├── login.js         # Route login (ridondante con auth.js?)
-│   └── users.js         # Route utenti
-├── .env                 # Variabili d'ambiente (ESCLUSO DA GIT)
-├── app.js               # File principale Express
-├── db.js                # Connessione al database
-├── hashPasswords.js     # Utility hashing password
-├── package.json         # Dipendenze e script
-├── package-lock.json    # Lock dipendenze
-└── verifyhash.js        # Verifica password hashata
-
-
-## 🗄 Struttura Frontend
-frontend/
-├── buttons/
-│   └── adminButtons.js  # Logica pulsanti admin
-├── dashboard/
-│   ├── admin.html       # Dashboard admin
-│   ├── doctor.html      # Dashboard medico
-│   ├── patient.html     # Dashboard paziente
-│   └── pharma_rep.html  # Dashboard informatore
-├── scripts/
-│   ├── admin.js         # Logica admin
-│   ├── auth.js          # Autenticazione
-│   ├── contacts.js      # Gestione contatti
-│   ├── doctor.js        # Logica medico
-│   ├── login.js         # Logica login
-│   ├── patient.js       # Logica paziente
-│   ├── pharma_rep.js    # Logica informatore
-│   └── register.js      # Registrazione
-├── styles/
-│   ├── contacts.css     # Stile contatti
-│   ├── dashboard.css    # Stile dashboard
-│   ├── login.css        # Stile login
-│   ├── register.css     # Stile registrazione
-│   ├── style.css        # Stili globali
-│   ├── styles.css       # Ridondante con style.css?
-│   └── welcome.css      # Stile pagina welcome
-├── contacts.html        # Pagina contatti
-├── forgot-password.html # Recupero password
-├── index.html           # Homepage
-├── login.html           # Pagina login
-└── register.html        # Pagina registrazione
+## 🗄 Struttura Backend/Frontend
+medical-center-app/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js              # Configurazione DB
+│   │   │   └── jwt.js            # Configurazione JWT
+│   │   ├── controllers/
+│   │   │   ├── authController.js
+│   │   │   └── appointmentController.js
+│   │   ├── middlewares/
+│   │   │   └── authMiddleware.js  # JWT + controllo ruoli
+│   │   ├── models/
+│   │   │   └── User.js           # Schemi DB
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   └── apiRoutes.js      # Tutte le API (/api/*)
+│   │   ├── utils/
+│   │   │   ├── hashPassword.js
+│   │   │   └── emailService.js   # Future notifiche
+│   │   └── app.js                # Entry point
+│   ├── .env.example
+│   └── package.json
+│
+├── frontend/
+│   ├── public/                   # File statici (HTML)
+│   │   ├── assets/
+│   │   │   ├── css/
+│   │   │   │   ├── auth.css      # Unificato login/register
+│   │   │   │   └── dashboard.css
+│   │   │   └── js/
+│   │   │       ├── modules/      # Logiche separate
+│   │   │       │   ├── auth/
+│   │   │       │   │   ├── login.js
+│   │   │       │   │   └── register.js
+│   │   │       │   └── dashboard/
+│   │   │       │       ├── admin.js
+│   │   │       │       └── doctor.js
+│   │   │       └── main.js       # Init globale
+│   │   ├── dashboard/
+│   │   │   └── [role].html       # Admin/Doctor/Patient
+│   │   ├── auth/
+│   │   │   ├── login.html
+│   │   │   └── register.html
+│   │   └── index.html
+│   └── package.json              # (Se usi build tool)
+│
+├── database/
+│   └── medical_center.sql       # Dump SQL
+│
+└── README.md                    # Documentazione
 
 
 ## 🚀 Come Avviare il Progetto  
@@ -117,22 +115,3 @@ frontend/
 | `/api/doctors`     | GET    | Elenco medici per specializzazione |
 
 > **Nota**: Questo progetto è stato sviluppato a scopo didattico.  
-> Il backend è completamente funzionante, mentre il frontend necessita di ulteriori sviluppi.
-
----
-
-### 💡 Per Collaborare  
-1. Forka il repository  
-2. Crea un branch per le tue modifiche  
-3. Apri una Pull Request descrivendo le migliorie  
-
-**Crediti**: Sviluppato da [Il Tuo Nome] con Node.js e Express  
-```
-
-### Perché questa struttura funziona?
-1. **Chiarezza sullo stato**: Differenzia nettamente ciò che è completo da ciò che è in sviluppo
-2. **Visualizzazione tecnica**: Diagrammi e badge rendono immediato capire lo stack
-3. **Istruzioni precise**: Passaggi dettagliati per il setup
-4. **Professionalità**: Formattazione coerente e linguaggio tecnico ma accessibile
-
-**Consiglio finale**: Aggiungi screenshot reali delle interfacce esistenti al posto del placeholder!
