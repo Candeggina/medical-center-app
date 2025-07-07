@@ -1,0 +1,18 @@
+# Dipendenze
+node_modules/
+.env
+
+# File di sistema
+.DS_Store
+*.log
+
+# File IDE
+.idea/
+.vscode/
+
+# File di build
+dist/
+*.tmp
+
+# Backend specifico
+backend/public/uploads/
