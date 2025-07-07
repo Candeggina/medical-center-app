@@ -48,7 +48,7 @@ medical-center-app/
 │   ├── src/
 │   │   ├── config/
 │   │   │   ├── db.js              # Configurazione DB
-│   │   │   └── jwt.js            # Configurazione JWT
+│   │   │   └── jwt.js             # Configurazione JWT
 │   │   ├── controllers/
 │   │   │   ├── authController.js
 │   │   │   └── appointmentController.js
@@ -87,7 +87,7 @@ medical-center-app/
 │   │   │   ├── login.html
 │   │   │   └── register.html
 │   │   └── index.html
-│   └── package.json              # (Se usi build tool)
+│   └── package.json              
 │
 ├── database/
 │   └── medical_center.sql       # Dump SQL
@@ -96,38 +96,44 @@ medical-center-app/
 ```
 
 
-   ## 🚀 Guida all'Installazione
+Ecco la versione perfettamente formattata per GitHub, mantenendo intatto il tuo contenuto originale ma ottimizzata per la visualizzazione:
 
-   ### Prerequisiti
-   - [Node.js](https://nodejs.org/) v18+
-   - [MySQL](https://www.mysql.com/) 8.0+
-   - [Git](https://git-scm.com/)
-   - Client database come [phpMyAdmin](https://www.phpmyadmin.net/) o [MySQL Workbench](https://www.mysql.com/products/workbench/)
+```markdown
+## 🚀 Guida all'Installazione
 
-   ### 1. Clonazione del Repository
-   ```bash
-   git clone https://github.com/Candeggina/medical-center-app.git
-   cd medical-center-app/backend
+### Prerequisiti
+- [![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?logo=nodedotjs)](https://nodejs.org/)  
+- [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql)](https://www.mysql.com/)  
+- [![Git](https://img.shields.io/badge/Git-Required-F05032?logo=git)](https://git-scm.com/)  
+- Client database:  
+  [![phpMyAdmin](https://img.shields.io/badge/-phpMyAdmin-6C78AF?logo=phpmyadmin)](https://www.phpmyadmin.net/)  
+  [![MySQL Workbench](https://img.shields.io/badge/-MySQL_Workbench-4479A1?logo=mysql)](https://www.mysql.com/products/workbench/)
 
-2. **Configura il database**  
-   - Importa `medical_center.sql` in phpMyAdmin  
-   - Crea un file `.env` con:  
-     ```
-     DB_HOST=localhost
-     DB_USER=tuo_user
-     DB_PASS=tuo_password
-     DB_NAME=medical_center
-     JWT_SECRET=tua_chiave_segreta
-     ```
+---
 
-3. **Installa e avvia**  
-   ```bash
-   cd backend
-   node app.js
-   ```
+### 1. Clonazione del Repository
+```bash
+git clone https://github.com/Candeggina/medical-center-app.git
+cd medical-center-app/backend
+```
 
-4. **Accedi al frontend**  
-   Apri `http://localhost:3000` nel browser  
+### 2. Configurazione Database  
+- Importa `medical_center.sql` in phpMyAdmin  
+- Crea/modifica il file `.env` con:  
+  ```env
+  DB_HOST=localhost
+  DB_USER=tuo_user
+  DB_PASS=tuo_password
+  DB_NAME=medical_center
+  JWT_SECRET=tua_chiave_segreta
+  ```
+
+### 3. Avvio Applicazione
+```bash
+node app.js
+```
+> Server disponibile all'indirizzo: `http://localhost:3000`
+```
 
 ## 📚 Documentazione API  
 | Endpoint           | Metodo | Descrizione                     |
