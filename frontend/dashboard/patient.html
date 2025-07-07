@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-user-injured"></i> Area Paziente</h2>
+                <p id="patientName"></p>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-btn active" data-content="contacts">
+                    <i class="fas fa-address-book"></i> Contatti
+                </button>
+                <button class="nav-btn" data-content="appointments">
+                    <i class="fas fa-calendar-check"></i> Appuntamenti
+                </button>
+                <button class="nav-btn" data-content="prescriptions">
+                    <i class="fas fa-file-medical"></i> Documenti
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-actions">
+                    <button id="newAppointment"><i class="fas fa-plus"></i> Nuovo Appuntamento</button>
+                    <button id="logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="content-wrapper" id="content">
+                <div class="welcome-message">
+                    <h1>Benvenuto nella Tua Area Personale</h1>
+                    <p>Gestisci i tuoi contatti e appuntamenti</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts/patient.js"></script>
+</body>
+</html>

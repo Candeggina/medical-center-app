@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharma Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-briefcase-medical"></i> Area Farmacia</h2>
+                <p id="pharmaName"></p>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-btn active" data-content="visits">
+                    <i class="fas fa-calendar-alt"></i> Visite Programmate
+                </button>
+                <button class="nav-btn" data-content="products">
+                    <i class="fas fa-pills"></i> Catalogo Prodotti
+                </button>
+                <button class="nav-btn" data-content="reports">
+                    <i class="fas fa-chart-bar"></i> Report
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-actions">
+                    <button id="newVisit"><i class="fas fa-plus"></i> Nuova Visita</button>
+                    <button id="logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </header>
+
+            <div class="content-wrapper" id="content">
+                <div class="welcome-message">
+                    <h1>Benvenuto nell'Area Farmaceutica</h1>
+                    <p>Gestisci le visite e i prodotti</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts/pharma_rep.js"></script>
+</body>
+</html>

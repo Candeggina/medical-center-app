@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    50% {
+        background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+    100% {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+}
+
+/* Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #6a11cb;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+    background: #f0f0f0;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+}
+
+/* Button */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Redirect Text */
+.redirect p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666;
+}
+
+.redirect a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.redirect a:hover {
+    color: #2575fc;
+    text-shadow: 0 2px 5px rgba(37, 117, 252, 0.6);
+}
+
+/* Subtle Glow Effect */
+.form-box::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.3), rgba(37, 117, 252, 0.3));
+    z-index: -1;
+    filter: blur(20px);
+}

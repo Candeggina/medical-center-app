@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Contatti</title>
+    <link rel="stylesheet" href="styles/contacts.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gestione Contatti</h1>
+            <button id="logout">Logout</button>
+        </header>
+        <main>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="text" id="phone" placeholder="Telefono" required>
+                <button type="submit">Aggiungi Contatto</button>
+            </form>
+            <div id="contactsList"></div>
+        </main>
+    </div>
+    <script src="scripts/contacts.js"></script>
+</body>
+</html>

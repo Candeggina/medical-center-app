@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Medical Center</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <style>
+        /* Stili aggiuntivi per migliorare l'UX */
+        .password-container {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="logo">
+                <img src="assets/medical-logo.png" alt="Medical Center Logo">
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="esempio@email.com" required>
+                </div>
+
+                <div class="input-group password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                    <i class="toggle-password fas fa-eye" onclick="togglePasswordVisibility()"></i>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <span class="btn-text">Accedi</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+
+                <div id="error-message" class="error-message"></div>
+            </form>
+
+            <div class="links">
+                <a href="register.html" class="link">Crea un account</a>
+                <a href="forgot-password.html" class="link">Password dimenticata?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome per le icone -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script>
+        // Funzione per mostrare/nascondere password
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('password');
+            const icon = document.querySelector('.toggle-password');
+            
+            if(passwordField.type === 'password') {
+                passwordField.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        }
+    </script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

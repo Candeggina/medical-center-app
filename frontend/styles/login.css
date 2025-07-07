@@ -1,0 +1,147 @@
+/* Stile di base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    z-index: -1;
+    animation: floatBackground 10s infinite ease-in-out alternate;
+}
+
+@keyframes floatBackground {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    100% {
+        transform: scale(1.1) translateX(-5%);
+    }
+}
+
+/* Contenitore principale */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titolo */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Form */
+form {
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.6);
+}
+
+/* Bottone */
+form button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 117, 252, 0.6);
+}
+
+/* Messaggio di errore */
+#error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Link di reindirizzamento */
+.redirect {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+.redirect a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.redirect a:hover {
+    color: #2575fc;
+    text-shadow: 0 0 5px rgba(37, 117, 252, 0.7);
+}
