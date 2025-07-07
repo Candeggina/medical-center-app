@@ -79,7 +79,7 @@ medical-center-app/
 │   └── medical_center.sql       # Dump SQL
 │
 └── README.md                    # Documentazione
-
+```
 
 
    ## 🚀 Guida all'Installazione
