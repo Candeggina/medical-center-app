@@ -81,12 +81,19 @@ medical-center-app/
 └── README.md                    # Documentazione
 
 
-## 🚀 Come Avviare il Progetto  
-1. **Clona il repository**  
+
+   ## 🚀 Guida all'Installazione
+
+   ### Prerequisiti
+   - [Node.js](https://nodejs.org/) v18+
+   - [MySQL](https://www.mysql.com/) 8.0+
+   - [Git](https://git-scm.com/)
+   - Client database come [phpMyAdmin](https://www.phpmyadmin.net/) o [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+   ### 1. Clonazione del Repository
    ```bash
    git clone https://github.com/Candeggina/medical-center-app.git
    cd medical-center-app/backend
-   ```
 
 2. **Configura il database**  
    - Importa `medical_center.sql` in phpMyAdmin  
