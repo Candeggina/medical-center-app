@@ -1,5 +1,5 @@
 # 🏥 Medical Center - Gestione Appuntamenti Medici  
-*Progetto scolastico full-stack con Node.js, Express e MySQL*  
+*Progetto scolastico full-stack con Html , Css , js , Node.js, Express e MySQL*  
 
 ![Anteprima Dashboard](https://i.imgur.com/hLuXcZZ.png)  
 
