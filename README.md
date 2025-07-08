@@ -4,7 +4,7 @@
 ## 🌟 Anteprime (Work in Progress)
 
 ### 🔐 Sistema di Autenticazione
-div align="center">
+<div align="center">
 <img src="https://i.imgur.com/hLuXcZZ.png" alt="Login Interface" width="400">
 <img src="https://i.imgur.com/YfgJWkJ.png" alt="Password Recovery" width="400">
 <img src="blob:https://imgur.com/22b1648d-6df1-48a6-936b-a9489e3ab453" alt="Registration" width="400">
