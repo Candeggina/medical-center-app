@@ -1,34 +1,34 @@
-               # 🏥 Medical Center - Gestione Appuntamenti Medici  
-      *Progetto full-stack in sviluppo con HTML5, CSS3, JavaScript, Node.js, Express e MySQL*  
+# 🏥 Medical Center - Gestione Appuntamenti Medici  
+*Progetto full-stack in sviluppo con HTML5, CSS3, JavaScript, Node.js, Express e MySQL*  
 
-      ## 🌟 Anteprime (Work in Progress)
+## 🌟 Anteprime (Work in Progress)
 
-      ### 🔐 Sistema di Autenticazione
-      <div align="center">
-      <img src="https://i.imgur.com/hLuXcZZ.png" alt="Login Interface" width="400">
-      <img src="https://i.imgur.com/YfgJWkJ.png" alt="Password Recovery" width="400">
-      <img src="blob:https://imgur.com/22b1648d-6df1-48a6-936b-a9489e3ab453" alt="Registration" width="400">
-      <p><em>Flusso completo: Login • Recupero Password • Registrazione</em></p>
-      </div>
+### 🔐 Sistema di Autenticazione
+div align="center">
+<img src="https://i.imgur.com/hLuXcZZ.png" alt="Login Interface" width="400">
+<img src="https://i.imgur.com/YfgJWkJ.png" alt="Password Recovery" width="400">
+<img src="blob:https://imgur.com/22b1648d-6df1-48a6-936b-a9489e3ab453" alt="Registration" width="400">
+<p><em>Flusso completo: Login • Recupero Password • Registrazione</em></p>
+</div>
 
-      ### 🚧 Dashboard (Bozze)
-      <div align="center">
-      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-         <div>
-            <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Admin+Dash" width="300">
-            <p><em>Amministrazione</em></p>
-         </div>
-         <div>
-            <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Doctor+Dash" width="300">
-            <em>Medico</em>
-         </div>
-         <div>
-            <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Patient+Dash" width="300">
-            <em>Paziente</em>
-         </div>
-      </div>
-      <p>Interfacce in fase di sviluppo - Design preliminare</p>
-      </div>
+### 🚧 Dashboard (Bozze)
+<div align="center">
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+<div>
+  <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Admin+Dash" width="300">
+  <p><em>Amministrazione</em></p>
+</div>
+ <div>
+  <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Doctor+Dash" width="300">
+  <em>Medico</em>
+</div>
+<div>
+  <img src="https://via.placeholder.com/300x200/607d8b/ffffff?text=Patient+Dash" width="300">
+  <em>Paziente</em>
+</div>
+</div>
+    <p>Interfacce in fase di sviluppo - Design preliminare</p>
+</div>
 
 ## 📌 Prossimi Sviluppi
 - [ ] Completamento interfacce dashboard
