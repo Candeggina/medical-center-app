@@ -5,7 +5,7 @@
 
 ### 🔐 Sistema di Autenticazione
 <div align="center">
-<img src="https://i.imgur.com/hLuXcZZ.png" alt="Login Interface" width="400">
+<img src="https://i.imgur.com/phOrWLP.png" alt="Login Interface" width="400">
 <img src="https://i.imgur.com/YfgJWkJ.png" alt="Password Recovery" width="400">
 <img src="https://i.imgur.com/vVaBcud.png" alt="Registration" width="400">
 <p><em>Flusso completo: Login • Recupero Password • Registrazione</em></p>
